@@ -1,0 +1,26 @@
+# Terraform state — contains secrets, never commit
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Provider binaries and modules — large, machine-specific
+.terraform/
+.terraform.tfstate.lock.info
+
+# Variable files often contain secrets
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Plan output files
+*.tfplan
+tfplan
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Editor noise
+.vscode/
+.idea/
+*.swp
